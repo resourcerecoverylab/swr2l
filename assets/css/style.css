@@ -41,3 +41,12 @@ body {font-family:'Poppins',sans-serif;}
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
+/* Override Bootstrap’s “primary” color to UT‐orange */
+.text-primary {
+  color: #BF5700 !important;
+}
+
+/* If you need a custom utility instead, you can also define: */
+.text-ut {
+  color: #BF5700 !important;
+}
