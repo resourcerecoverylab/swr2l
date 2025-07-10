@@ -1,51 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>News – SWR²L</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>News &amp; Activities – SWR<sup>2</sup>L</title>
+
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
-<body>
-  <!-- NAV -->
- <nav class="navbar navbar-light bg-white border-bottom">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">SWR<sup>2</sup>L</a>
-    <ul class="navbar-nav d-flex flex-row justify-content-center gap-4 mx-auto">
-      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-      <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
-      <!-- Projects removed -->
-      <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+<body class="d-flex flex-column min-vh-100">
 
-
-  <!-- NEWS LIST -->
-  <section class="py-5">
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-light bg-white border-bottom">
     <div class="container">
-      <h2>News &amp; Updates</h2>
-      <ul class="list-group mt-4">
-        <li class="list-group-item">2025-01-15: Lab officially started</li>
-        <li class="list-group-item">2025-02-10: New lab space inaugurated</li>
-        <li class="list-group-item">2025-03-05: Xavi presents at international webinar</li>
-        <li class="list-group-item">2025-04-12: Visit to UBC for collaboration</li>
-        <li class="list-group-item">2025-05-20: Talk at AD conference</li>
-        <li class="list-group-item">2025-06-08: Lecture at UNT Denton</li>
-        <li class="list-group-item">2025-06-30: WRF project kickoff</li>
-        <li class="list-group-item">2025-07-01: Demonstration unit & community engagement launched</li>
-        <li class="list-group-item">2024: Multiple papers published</li>
+      <a class="navbar-brand fw-bold" href="index.html">SWR<sup>2</sup>L</a>
+      <ul class="navbar-nav d-flex flex-row justify-content-center gap-4 mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
+    </div>
+  </nav>
+
+  <!-- NEWS TIMELINE -->
+  <section class="py-5">
+    <div class="container position-relative">
+      <h2 class="text-center mb-5">News &amp; Activities</h2>
+      <div class="timeline">
+
+        <!-- 1 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="date">—</span>
+            <h5>Group started</h5>
+            <p><!-- description here --></p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="date">—</span>
+            <h5>New lab!</h5>
+            <p><!-- description here --></p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="date">—</span>
+            <h5>Xavi presents at webinar</h5>
+            <p><!-- description here --></p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="date">—</span>
+            <h5>Xavi visits UBC</h5>
+            <p><!-- description here --></p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="date">—</span>
+            <h5>Xavi presents in AD conference</h5>
+            <p><!-- description here --></p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="date">—</span>
+            <h5>Xavi gives lecture in Denton</h5>
+            <p><!-- description here --></p>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="date">—</span>
+            <h5>Project WRF starts</h5>
+            <p><!-- description here --></p>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="date">—</span>
+            <h5>Demonstration unit &amp; community engagement</h5>
+            <p><!-- description here --></p>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="date">—</span>
+            <h5>Papers that came out in 2024 and 20</h5>
+            <p><!-- description here --></p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <footer class="text-white text-center py-3" style="background:#BF5700;">
+  <!-- FOOTER -->
+  <footer class="mt-auto text-white text-center py-3" style="background:#BF5700;">
     © 2025 Sustainable Waste Resource Recovery Lab
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
