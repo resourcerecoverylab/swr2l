@@ -1,0 +1,33 @@
+/* Base reset & Poppins */
+*,*::before,*::after {box-sizing:border-box;margin:0;padding:0;}
+body {font-family:'Poppins',sans-serif;}
+
+/* NAV LINK COLORS */
+.navbar-nav .nav-link {color:#000;font-weight:600;}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {color:#BF5700 !important;}
+
+/* HERO STYLING */
+.hero {
+  position: relative;
+  background: url('https://source.unsplash.com/1600x900/?laboratory') center/cover no-repeat;
+  height: 60vh;
+}
+.hero .overlay {top:0;left:0;}
+.hero h1, .hero p {position: relative;}
+
+/* ABOUT BANNER */
+.about {background:#BF5700;}
+
+/* CARD CUSTOMIZATION */
+.mission-card {
+  border: none;
+  border-left:5px solid #BF5700;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  transition:transform .3s,box-shadow .3s;
+}
+.mission-card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 6px 16px rgba(0,0,0,0.15);
+}
+.mission-card .card-title {color:#BF5700;}
