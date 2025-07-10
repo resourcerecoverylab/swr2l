@@ -31,3 +31,13 @@ body {font-family:'Poppins',sans-serif;}
   box-shadow:0 6px 16px rgba(0,0,0,0.15);
 }
 .mission-card .card-title {color:#BF5700;}
+.mission-card {
+  border-left: 5px solid #BF5700;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform .3s, box-shadow .3s;
+}
+.mission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
