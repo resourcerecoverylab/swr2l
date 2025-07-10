@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Team – SWR²L</title>
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <!-- Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <!-- Custom CSS -->
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Your custom styles -->
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body class="d-flex flex-column min-vh-100">
-  <!-- NAVBAR (keep yours unchanged) -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <!-- … -->
+
+  <!-- NAVIGATION (always expanded) -->
+  <nav class="navbar navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">SWR<sup>2</sup>L</a>
+      <ul class="navbar-nav d-flex flex-row mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+        <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- PEOPLE SECTION -->
+  <!-- TEAM SECTION -->
   <section class="py-5">
     <div class="container">
 
-      <!-- Quote -->
-      <h2 class="mb-3">People</h2>
+      <h2 class="mb-3">Meet the Team</h2>
       <blockquote class="fst-italic text-muted mb-5">
         “Never doubt that a small group of thoughtful committed individuals can change the world. 
         In fact, it’s the only thing that ever has.” – Margaret Mead
@@ -47,7 +68,6 @@
 
       <!-- Ph.D. Students -->
       <h3 class="text-primary mb-4">Ph.D. Students</h3>
-      <!-- repeat team-member rows as before -->
       <div class="row align-items-center mb-4 team-member">
         <div class="col-md-2 text-center">
           <img src="assets/images/hyunje.jpg" alt="Hyunje Yang" class="rounded-circle member-photo">
@@ -55,13 +75,16 @@
         <div class="col-md-10">
           <h5 class="mb-1">Hyunje Yang</h5>
           <p class="small text-muted mb-2">
-            M.S. Forest Environmental Science, Seoul National University, 2018<br>
-            B.S. Forest Environmental Science, Seoul National University, 2016
+            M.S.
+            B.S. 
           </p>
-          <p class="small">2024 CAEE Graduate Student Symposium; 3rd Place Presentation Winner</p>
+          <p class="small">
+   xyz
+          </p>
+          <p class="small"><a href="mailto:hyunje@utexas.edu">hyunje@utexas.edu</a></p>
         </div>
       </div>
-      <!-- add more PhD students here -->
+      <!-- add more Ph.D. students similarly -->
 
       <!-- Master’s Students -->
       <h3 class="text-primary mt-5 mb-4">Master’s Students</h3>
@@ -72,13 +95,15 @@
         <div class="col-md-10">
           <h5 class="mb-1">Master Student A</h5>
           <p class="small text-muted mb-2">
-            M.S. Civil & Architectural Engineering, UT Austin, expected 2026
+            M.S. 
           </p>
-          <p class="small">Working on techno-economic analyses of resource recovery processes.</p>
+          <p class="small">
+           
+          </p>
           <p class="small"><a href="mailto:mastersa@utexas.edu">mastersa@utexas.edu</a></p>
         </div>
       </div>
-      <!-- add more Master’s students here -->
+      <!-- add more Master’s students -->
 
       <!-- Undergraduate Students -->
       <h3 class="text-primary mt-5 mb-4">Undergraduate Students</h3>
@@ -89,13 +114,15 @@
         <div class="col-md-10">
           <h5 class="mb-1">Undergrad Student A</h5>
           <p class="small text-muted mb-2">
-            B.S. Environmental Engineering, UT Austin, expected 2025
+       
           </p>
-          <p class="small">Assisting with lab-scale hydrothermal liquefaction experiments.</p>
+          <p class="small">
+            Assisting with xyz
+          </p>
           <p class="small"><a href="mailto:undergrada@utexas.edu">undergrada@utexas.edu</a></p>
         </div>
       </div>
-      <!-- add more undergraduates here -->
+      <!-- add more Undergraduates -->
 
       <!-- Alumni -->
       <h3 class="text-primary mt-5 mb-4">Alumni</h3>
@@ -105,20 +132,4 @@
         </div>
         <div class="col-md-10">
           <h5 class="mb-1">Alumni A</h5>
-          <p class="small text-muted mb-2">Ph.D., University; now at Company/Institution</p>
-          <p class="small">Contributed to PFAS fate studies during HTL.</p>
-        </div>
-      </div>
-      <!-- add more alumni here -->
-
-    </div>
-  </section>
-
-  <!-- FOOTER (keep yours unchanged) -->
-  <footer class="mt-auto text-white text-center py-3" style="background:#BF5700;">
-    © 2025 Sustainable Waste Resource Recovery Lab
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+          <p class="small text-muted mb-2">
