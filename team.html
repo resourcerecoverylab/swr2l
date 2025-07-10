@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Team – SWR²L</title>
+  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
-<body>
-  <!-- NAV -->
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">>SWR²L</a>
+      <a class="navbar-brand fw-bold" href="index.html">SWR<sup>2</sup>L</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,69 +33,115 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero text-white position-relative">
-    <div class="overlay position-absolute w-100 h-100 bg-dark opacity-50"></div>
-    <div class="container position-relative text-center py-5">
-      <h1 class="display-4 fw-bold">👥 Research Team</h1>
-      <p class="lead mt-3">Our interdisciplinary group of students, postdocs, and collaborators.</p>
-    </div>
-  </header>
-
-  <!-- TEAM GRID -->
-  <section class="py-5">
+  <!-- PRINCIPAL INVESTIGATOR -->
+  <section class="py-5 bg-light">
     <div class="container">
-      <div class="row g-4">
-        <!-- PI -->
-        <div class="col-md-4">
-          <div class="card h-100 text-center border-0 shadow-sm">
-            <img src="assets/images/xavi.jpg" class="card-img-top rounded-circle mx-auto mt-3" 
-                 style="width:120px;height:120px;object-fit:cover;" alt="Dr. Fonoll Almansa">
-            <div class="card-body">
-              <h5 class="card-title">Dr. Xavier Fonoll Almansa</h5>
-              <p class="card-text">
-                Principal Investigator<br/>
-                fonoll@utexas.edu
-              </p>
-              <p class="small">
-                Combines microbial community engineering with environmental &amp; cost analyses 
-                to recover resources from organic waste via hydrothermal liquefaction and anaerobic biotechnologies.
-              </p>
-            </div>
-          </div>
+      <h2 class="text-center mb-4">Meet the Principal Investigator</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+          <img src="assets/images/xavi.jpg"
+               class="rounded-circle mb-3"
+               style="width:160px; height:160px; object-fit:cover;"
+               alt="Dr. Xavier Fonoll Almansa">
+          <h4 class="fw-bold">Dr. Xavier Fonoll Almansa</h4>
+          <p class="text-muted mb-1">Principal Investigator</p>
+          <p class="small px-3">
+           Dr. Fonoll Almansa research combines Microbial Community Engineering, and Environmental and Chemical Engineering to develop new technologies that work towards the recovery of resources from urban and agricultural organic waste streams. His lab focuses on the use of Hydrothermal Liquefaction and anaerobic biotechnologies to recover resources like biocrude, biogas and volatile fatty acids. The technologies developed aim to solve global challenges such as the lack of proper sanitation in developing countries and remote areas without infrastructure.
+          </p>
+          <p class="mt-2">
+            <a href="mailto:fonoll@utexas.edu" class="text-decoration-none">fonoll@utexas.edu</a>
+          </p>
         </div>
-        <!-- Postdoc placeholder -->
-        <div class="col-md-4">
-          <div class="card h-100 text-center border-0 shadow-sm">
-            <img src="assets/images/postdoc.jpg" class="card-img-top rounded-circle mx-auto mt-3" 
-                 style="width:120px;height:120px;object-fit:cover;" alt="Postdoc">
-            <div class="card-body">
-              <h5 class="card-title">[Postdoc Name]</h5>
-              <p class="card-text">Research Manager, GLWA<br/>email@utexas.edu</p>
-              <p class="small">Bio &amp; projects coming soon.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Graduate student placeholder -->
-        <div class="col-md-4">
-          <div class="card h-100 text-center border-0 shadow-sm">
-            <img src="assets/images/xuemei.jpg" class="card-img-top rounded-circle mx-auto mt-3" 
-                 style="width:120px;height:120px;object-fit:cover;" alt="Xuemei">
-            <div class="card-body">
-              <h5 class="card-title">Xuemei [Last]</h5>
-              <p class="card-text">Graduate Student<br/>xuemei@utexas.edu</p>
-              <p class="small">Bio coming soon.</p>
-            </div>
-          </div>
-        </div>
-        <!-- add more members as needed -->
       </div>
     </div>
   </section>
 
-  <footer class="text-white text-center py-3" style="background:#BF5700;">
+  <!-- TEAM MEMBERS GRID -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Meet the Team</h2>
+      <div class="row g-4">
+        <!-- Postdoc -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/images/postdoc.jpg" class="card-img-top" alt="Postdoc">
+            <div class="card-body">
+              <h5 class="card-title">[Postdoc Name]</h5>
+              <p class="text-muted">Postdoctoral Researcher<br/>Research Manager, GLWA</p>
+              <p class="small">
+                Bio coming soon.
+              </p>
+              <p class="mt-2"><a href="mailto:postdoc@utexas.edu">postdoc@utexas.edu</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Postdoc -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/images/xuemei.jpg" class="card-img-top" alt="Xuemei">
+            <div class="card-body">
+              <h5 class="card-title">Xuemei [Last]</h5>
+              <p class="text-muted">Graduate Student</p>
+              <p class="small">
+                Bio coming soon.
+              </p>
+              <p class="mt-2"><a href="mailto:xuemei@utexas.edu">xuemei@utexas.edu</a></p>
+            </div>
+          </div>
+        </div>
+         <!-- Postdoc -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/images/postdoc.jpg" class="card-img-top" alt="Postdoc">
+            <div class="card-body">
+              <h5 class="card-title">[Postdoc Name]</h5>
+              <p class="text-muted">Postdoctoral Researcher<br/>Research Manager, GLWA</p>
+              <p class="small">
+                Bio coming soon.
+              </p>
+              <p class="mt-2"><a href="mailto:postdoc@utexas.edu">postdoc@utexas.edu</a></p>
+            </div>
+          </div>
+        </div>
+         <!-- Postdoc -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/images/postdoc.jpg" class="card-img-top" alt="Postdoc">
+            <div class="card-body">
+              <h5 class="card-title">[Postdoc Name]</h5>
+              <p class="text-muted">Postdoctoral Researcher<br/>Research Manager, GLWA</p>
+              <p class="small">
+                Bio coming soon.
+              </p>
+              <p class="mt-2"><a href="mailto:postdoc@utexas.edu">postdoc@utexas.edu</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Add other members similarly -->
+        <!-- Example graduate student -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/images/juny.jpg" class="card-img-top" alt="Juny Lee">
+            <div class="card-body">
+              <h5 class="card-title">Juny Lee</h5>
+              <p class="text-muted">Undergraduate Student</p>
+              <p class="small">
+                Studying Environmental Engineering and Psychology; avid movie fan.
+              </p>
+              <p class="mt-2"><a href="mailto:juny@utexas.edu">juny@utexas.edu</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Continue for each team member... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="mt-auto text-white text-center py-3" style="background:#BF5700;">
     © 2025 Sustainable Waste Resource Recovery Lab
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
