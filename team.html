@@ -25,21 +25,19 @@
 <body class="d-flex flex-column min-vh-100">
 
   <!-- NAVIGATION (always expanded) -->
-<nav class="navbar navbar-light bg-white border-bottom">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">SWR<sup>2</sup>L</a>
-<ul class="navbar-nav d-flex flex-row justify-content-center gap-4 mx-auto">
-  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-  <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-  <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
-  <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-  <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
- 
-</ul>
-  </div>
-</nav>
-
+  <nav class="navbar navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">SWR<sup>2</sup>L</a>
+      <ul class="navbar-nav d-flex flex-row justify-content-center gap-4 mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+        <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- HERO (same structure as other pages) -->
   <header class="hero text-white position-relative">
@@ -53,7 +51,7 @@
   </header>
 
   <!-- TEAM SECTION -->
-   <section class="py-5">
+  <section class="py-5">
     <div class="container">
 
       <h2 class="mb-3">Meet the Team</h2>
@@ -62,6 +60,7 @@
       <h3 class="text-primary mb-4">Principal Investigator</h3>
       <div class="row align-items-center mb-5 team-member">
         <div class="col-md-2 text-center">
+          <!-- updated to xaviheadshot.jfif -->
           <img
             src="assets/images/xaviheadshot.jfif"
             alt="Dr. Xavier Fonoll Almansa"
@@ -88,8 +87,10 @@
 
       <!-- Ph.D. Students -->
       <h3 class="text-primary mb-4">Ph.D. Students</h3>
+
       <div class="row align-items-center mb-4 team-member">
         <div class="col-md-2 text-center">
+          <!-- updated to xuemeieheadshot.jpg -->
           <img
             src="assets/images/xuemeieheadshot.jpg"
             alt="Xuemei Li"
@@ -106,17 +107,39 @@
           <p class="small">
             Xuemei is currently working on simulating rumen-like environments to enhance lignocellulose hydrolysis. Prior to joining UT, she focused on identifying and controlling emerging contaminants in the environment and researching microbial processes in the anaerobic digestion of sludge.
           </p>
-          <p class="small"><a href="mailto:xuemei@utexas.edu">xuemeili@utexas.edu</a></p>
+          <p class="small"><a href="mailto:xuemeili@utexas.edu">xuemeili@utexas.edu</a></p>
         </div>
       </div>
 
+      <!-- M.S. Students -->
+      <h3 class="text-primary mt-5 mb-4">Master’s Students</h3>
       <div class="row align-items-center mb-4 team-member">
         <div class="col-md-2 text-center">
-          <img src="assets/images/yunfan.jpg" alt="Yunfan Lu" class="rounded-circle member-photo">
+          <!-- updated to vi headshot.png -->
+          <img
+            src="assets/images/vi headshot.png"
+            alt="Yunfan Lu"
+            class="rounded-circle member-photo"
+            style="width:100px; height:100px; object-fit:cover;"
+          >
         </div>
+        <div class="col-md-10">
+          <h5 class="mb-1">Yunfan Lu</h5>
+          <p class="small text-muted mb-2">
+            Pursuing M.S. in Environmental and Water Resources Engineering <br/>
+            B.S. in Chemical Engineering
+          </p>
+          <p class="small">
+           Description
+          </p>
+          <p class="small"><a href="mailto:yunfan@utexas.edu">yunfan@utexas.edu</a></p>
+        </div>
+      </div>
 
-       <div class="row align-items-center mb-4 team-member">
+      <!-- Ph.D. Student (William) -->
+      <div class="row align-items-center mb-4 team-member">    
         <div class="col-md-2 text-center">
+          <!-- updated to willheadshot.jfif -->
           <img
             src="assets/images/willheadshot.jfif"
             alt="William Wehner"
@@ -133,13 +156,15 @@
           <p class="small">
             Will's research focuses on resource recovery through anaerobic digestion, hydrothermal liquefaction, and PFAS transformation.
           </p>
-          <p class="small"><a href="mailto:william@utexas.edu">william.wehner@utexas.edu</a></p>
+          <p class="small"><a href="mailto:william.wehner@utexas.edu">william.wehner@utexas.edu</a></p>
         </div>
       </div>
 
-      <!-- Master’s Students -->
-      <h3 class="text-primary mt-5 mb-4">Master’s Students</h3>
-     <div class="col-md-2 text-center">
+      <!-- Reza Mahmoodi -->
+      <h3 class="text-primary mt-5 mb-4">Undergraduate Students</h3>
+      <div class="row align-items-center mb-4 team-member">
+        <div class="col-md-2 text-center">
+          <!-- updated to reza headshot.jfif -->
           <img
             src="assets/images/reza headshot.jfif"
             alt="Reza Mahmoodi"
@@ -152,43 +177,11 @@
           <p class="small text-muted mb-2">
             M.S. in X <br/>
             B.S. in X
-
           </p>
           <p class="small">
             Description
           </p>
-          <p class="small"><a href="mailto:reza@utexas.edu">m.reza.mahmoodi@austin.utexas.edu</a></p>
-        </div>
-      </div>
-
-  <div class="col-md-10">
-          <h5 class="mb-1">Yunfan Lu</h5>
-          <p class="small text-muted mb-2">
-            Pursuing M.S. in Environmental and Water Resources Engineering <br/>
-            B.S. in Chemical Engineering
-          </p>
-          <p class="small">
-           Description
-          </p>
-          <p class="small"><a href="mailto:yunfan@utexas.edu">yunfan@utexas.edu</a></p>
-        </div>
-      </div>
-
-      <!-- Undergraduate Students -->
-      <h3 class="text-primary mt-5 mb-4">Undergraduate Students</h3>
-      <div class="row align-items-center mb-4 team-member">
-        <div class="col-md-2 text-center">
-          <img src="assets/images/violet.jpg" alt="Violet Dinh-Boyd" class="rounded-circle member-photo">
-        </div>
-        <div class="col-md-10">
-          <h5 class="mb-1">Violet Dinh Boyd</h5>
-          <p class="small text-muted mb-2">
-            B.S. in Environmental Engineering, UT Austin 
-          </p>
-          <p class="small">
-            Description
-          </p>
-          <p class="small"><a href="mailto:violet@utexas.edu">violetdb@utexas.edu</a></p>
+          <p class="small"><a href="mailto:m.reza.mahmoodi@austin.utexas.edu">m.reza.mahmoodi@austin.utexas.edu</a></p>
         </div>
       </div>
 
@@ -196,7 +189,12 @@
       <h3 class="text-primary mt-5 mb-4">Alumni</h3>
       <div class="row align-items-center mb-4 team-member">
         <div class="col-md-2 text-center">
-          <img src="assets/images/iris.jpg" alt="Iris Bradbury" class="rounded-circle member-photo">
+          <img
+            src="assets/images/iris.jpg"
+            alt="Iris Bradbury"
+            class="rounded-circle member-photo"
+            style="width:100px; height:100px; object-fit:cover;"
+          >
         </div>
         <div class="col-md-10">
           <h5 class="mb-1">Iris Bradbury</h5>
