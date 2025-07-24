@@ -45,33 +45,3 @@ body {font-family:'Poppins',sans-serif;}
 .text-primary {
   color: #BF5700 !important;
 }
-
-/* Projects card styling */
-.project-card {
-  border: none;
-  border-radius: 0.75rem;
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-.project-card .card-img-top {
-  height: 200px;
-  object-fit: cover;
-}
-.project-card .card-body {
-  padding: 1rem 1.25rem;
-}
-.project-card .card-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-.project-card .card-subtitle {
-  font-size: 0.9rem;
-  margin-bottom: 0.75rem;
-}
-
-
