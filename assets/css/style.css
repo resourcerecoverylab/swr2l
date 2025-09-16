@@ -45,9 +45,3 @@ body {font-family:'Poppins',sans-serif;}
 .text-primary {
   color: #BF5700 !important;
 }
-
-/* Group Pic*/
-.large-photo {
-  width: 100%;         /* make it fill the container width */
-  max-width: 1100px;   /* cap so it doesn’t get too huge on big screens */
-}
