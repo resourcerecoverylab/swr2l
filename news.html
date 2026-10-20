@@ -69,6 +69,15 @@
       margin-top: 0;
       color: #BF5700;
     }
+    /* NEW: news photo inside each card */
+    .timeline-img {
+      display: block;
+      width: 100%;
+      max-height: 240px;
+      object-fit: cover;          /* crops nicely instead of stretching */
+      border-radius: 0.375rem;
+      margin-bottom: .75rem;
+    }
     @media (max-width: 768px) {
       .timeline::before { left: 8px; }
       .timeline-item,
@@ -100,83 +109,111 @@
     </div>
   </nav>
 
-  <!-- NEWS TIMELINE -->
+  <!-- NEWS TIMELINE (newest at the top; alternate left / right) -->
   <section class="py-5">
     <div class="container position-relative">
       <h2 class="text-center mb-5">News &amp; Activities</h2>
       <div class="timeline">
 
+        <!-- ===== IAFC 2026 ===== -->
         <div class="timeline-item left">
           <div class="timeline-content">
+            <img class="timeline-img" src="images/news/iafc2026.png"
+                 alt="Xuemei Li presenting her poster at IAFC 2026"
+                 onerror="this.style.display='none'"/>
             <span class="date">October 2026</span>
-            <h5>Xuemei Li presented the poster <em>"Engineering Persistent Anaerobic Fungal Communities in Mixed Community Digesters for Lignocellulosic Waste Valorization"</em> at the International Anaerobic Fungi Congress (IAFC 2026). </h5>
-            <p><!-- description here --></p>
+            <h5>Poster at the International Anaerobic Fungi Congress (IAFC 2026)</h5>
+            <p>Xuemei Li presented the poster <em>"Engineering Persistent Anaerobic Fungal Communities in Mixed Community Digesters for Lignocellulosic Waste Valorization"</em> at IAFC 2026.</p>
           </div>
         </div>
 
+        <!-- ===== WEFTEC 2026 ===== -->
         <div class="timeline-item right">
           <div class="timeline-content">
-            <span class="date">—</span>
-            <h5>Coming soon</h5>
-            <p><!-- description here --></p>
+            <img class="timeline-img" src="images/news/weftec2026.png"
+                 alt="SWR2L at WEFTEC 2026"
+                 onerror="this.style.display='none'"/>
+            <span class="date">September 2026</span>
+            <h5>WEFTEC 2026: Session on HTL Implementation at Wastewater Treatment Plants</h5>
+            <p>The group organized a session at WEFTEC 2026 in New Orleans on two aspects of implementing hydrothermal liquefaction (HTL) at wastewater treatment plants: management of the HTL aqueous by-product and PFAS fate. During the session, Will Wehner presented his work on HTL aqueous phase (HTL-aq) treatment. In a separate session, Dr. Xavier Fonoll Almansa presented results from the DOE project on the feasibility of HTL implementation.</p>
           </div>
         </div>
 
+        <!-- ===== ACS GC&E 2026 ===== -->
         <div class="timeline-item left">
           <div class="timeline-content">
-            <span class="date">—</span>
-            <h5>Coming soon</h5>
-            <p><!-- description here --></p>
+            <img class="timeline-img" src="images/news/acs-gce2026.png"
+                 alt="SWR2L at the ACS Green Chemistry &amp; Engineering Conference 2026"
+                 onerror="this.style.display='none'"/>
+            <span class="date">June 2026</span>
+            <h5>ACS Green Chemistry &amp; Engineering Conference 2026</h5>
+            <p>At the ACS Green Chemistry &amp; Engineering Conference in San Antonio, TX, the group presented its work on hydrothermal liquefaction.</p>
           </div>
         </div>
 
+        <!-- ===== IWA AD19 ===== -->
         <div class="timeline-item right">
           <div class="timeline-content">
-            <span class="date">—</span>
-            <h5>Coming soon</h5>
-            <p><!-- description here --></p>
+            <img class="timeline-img" src="images/news/iwa-ad19.png"
+                 alt="Poster at the IWA World Conference on Anaerobic Digestion in Valencia"
+                 onerror="this.style.display='none'"/>
+            <span class="date">June 2026</span>
+            <h5>IWA World Conference on Anaerobic Digestion (AD19)</h5>
+            <p>Dr. Fonoll Almansa attended the 19th IWA World Conference on Anaerobic Digestion in Valencia, Spain, where he presented Will Wehner's research in a poster.</p>
           </div>
         </div>
 
+        <!-- ===== RBTT 2026 ===== -->
         <div class="timeline-item left">
           <div class="timeline-content">
-            <span class="date">—</span>
-            <h5>Coming soon</h5>
-            <p><!-- description here --></p>
+            <img class="timeline-img" src="images/news/rbtt2026.png"
+                 alt="Presentation at the WEF Residuals, Biosolids and Treatment Technology Conference"
+                 onerror="this.style.display='none'"/>
+            <span class="date">May 2026</span>
+            <h5>Residuals, Biosolids and Treatment Technology Conference</h5>
+            <p>Dr. Xavier Fonoll Almansa gave a presentation on the fate of PFAS during continuous hydrothermal liquefaction at the WEF Residuals, Biosolids and Treatment Technology Conference in Kansas City, MO.</p>
           </div>
         </div>
 
+        <!-- ===== Eckenfelder Lecture ===== -->
+        <!-- TODO: confirm the month of this lecture and move this block to the right place in time order -->
         <div class="timeline-item right">
           <div class="timeline-content">
-            <span class="date">—</span>
-            <h5>Coming soon</h5>
-            <p><!-- description here --></p>
+            <img class="timeline-img" src="images/news/eckenfelder.png"
+                 alt="Dr. Fonoll Almansa speaking at the Eckenfelder Lecture Series"
+                 onerror="this.style.display='none'"/>
+            <span class="date">2026</span>
+            <h5>Invited Speaker at the Eckenfelder Lecture Series</h5>
+            <p>Dr. Fonoll Almansa was invited as a speaker in the Eckenfelder Lecture Series to talk about next-generation treatment options for biosolids.</p>
           </div>
         </div>
 
+        <!-- ===== Group started ===== -->
         <div class="timeline-item left">
           <div class="timeline-content">
-            <span class="date">—</span>
-            <h5>Coming soon</h5>
-            <p><!-- description here --></p>
-          </div>
-        </div>
-
-        <div class="timeline-item right">
-          <div class="timeline-content">
-            <span class="date">—</span>
-            <h5>Coming soon</h5>
-            <p><!-- description here --></p>
-          </div>
-        </div>
-
-        <div class="timeline-item left">
-          <div class="timeline-content">
-            <span class="date">"February 2024">—</span>
+            <span class="date">February 2024</span>
             <h5>Group started</h5>
             <p><!-- description here --></p>
           </div>
         </div>
+
+        <!--
+        ===================== TEMPLATE: copy this block to add a new news item =====================
+        1. Paste it right below <div class="timeline"> so the newest item is on top.
+        2. Then flip left/right on the items below so they keep alternating.
+
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <img class="timeline-img" src="images/news/FILENAME.png"
+                 alt="Short description of the photo"
+                 onerror="this.style.display='none'"/>
+            <span class="date">Month Year</span>
+            <h5>Short title</h5>
+            <p>One to three sentences describing the news.</p>
+          </div>
+        </div>
+        ============================================================================================
+        -->
 
       </div>
     </div>
